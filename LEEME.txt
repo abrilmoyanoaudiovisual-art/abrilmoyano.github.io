@@ -1,0 +1,12 @@
+PORTFOLIO · ABRIL MOYANO
+
+Abrí el archivo GUIA-PASO-A-PASO.html (doble clic) y seguí las instrucciones.
+Ahí te explico cómo publicar la página y cómo usar el panel de administración.
+
+Contenido de esta carpeta:
+  index.html, css/, js/   → la página (no hace falta tocarlos)
+  data/                   → los textos y datos que edita el panel
+  img/                    → las imágenes (el panel sube las nuevas acá)
+  cv/                     → tu CV en PDF (lo sube el panel)
+  .pages.yml              → configuración del panel (archivo oculto)
+  panel-config.txt        → copia visible de .pages.yml, por si hace falta

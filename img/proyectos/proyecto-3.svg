@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B0612"/><stop offset=".55" stop-color="#1b0b3a"/><stop offset="1" stop-color="#07040c"/></linearGradient><linearGradient id="b1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A78BFA" stop-opacity=".95"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></linearGradient><linearGradient id="b2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EC4899" stop-opacity=".9"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/></linearGradient><radialGradient id="glow" cx=".5" cy=".62" r=".6"><stop offset="0" stop-color="#EC4899" stop-opacity=".55"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/></radialGradient><filter id="bl"><feGaussianBlur stdDeviation="22"/></filter><filter id="bl2"><feGaussianBlur stdDeviation="7"/></filter><filter id="gr"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="203"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .5 0"/></filter></defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<polygon points="206,0 222,0 1022,765 355,765" fill="url(#b1)" opacity="0.36" filter="url(#bl)"/>
+<polygon points="1423,0 1439,0 1637,765 690,765" fill="url(#b2)" opacity="0.43" filter="url(#bl)"/>
+<polygon points="180,0 196,0 612,765 85,765" fill="url(#b1)" opacity="0.61" filter="url(#bl)"/>
+<circle cx="188" cy="371" r="72" fill="#EC4899" opacity="0.34" filter="url(#bl2)"/>
+<circle cx="939" cy="305" r="45" fill="#A78BFA" opacity="0.23" filter="url(#bl2)"/>
+<circle cx="117" cy="393" r="33" fill="#A78BFA" opacity="0.17" filter="url(#bl2)"/>
+<circle cx="1458" cy="605" r="62" fill="#A78BFA" opacity="0.30" filter="url(#bl2)"/>
+<circle cx="1391" cy="84" r="53" fill="#EC4899" opacity="0.23" filter="url(#bl2)"/>
+<circle cx="694" cy="242" r="36" fill="#A78BFA" opacity="0.19" filter="url(#bl2)"/>
+<circle cx="1395" cy="418" r="26" fill="#ffffff" opacity="0.42" filter="url(#bl2)"/>
+<circle cx="105" cy="171" r="33" fill="#EC4899" opacity="0.31" filter="url(#bl2)"/>
+<circle cx="1180" cy="88" r="67" fill="#EC4899" opacity="0.37" filter="url(#bl2)"/>
+<circle cx="1272" cy="64" r="46" fill="#A78BFA" opacity="0.48" filter="url(#bl2)"/>
+<circle cx="1586" cy="583" r="71" fill="#ffffff" opacity="0.14" filter="url(#bl2)"/>
+<circle cx="323" cy="78" r="57" fill="#EC4899" opacity="0.23" filter="url(#bl2)"/>
+<rect x="592" y="614" width="228" height="251" rx="6" fill="#0e0818" stroke="#A78BFA" stroke-opacity=".5" stroke-width="3"/>
+<rect x="54" y="593" width="381" height="244" rx="6" fill="#0e0818" stroke="#A78BFA" stroke-opacity=".5" stroke-width="3"/>
+<rect x="620" y="690" width="256" height="171" rx="6" fill="#0e0818" stroke="#A78BFA" stroke-opacity=".5" stroke-width="3"/>
+<rect x="876" y="715" width="331" height="174" rx="6" fill="#0e0818" stroke="#A78BFA" stroke-opacity=".5" stroke-width="3"/>
+<path d="M0 126 Q 800 270 1600 126" stroke="#2b1a4d" stroke-width="4" fill="none"/>
+<circle cx="89" cy="141" r="22" fill="#FFD9A8" opacity=".95"/>
+<circle cx="267" cy="166" r="22" fill="#FFD9A8" opacity=".95"/>
+<circle cx="444" cy="184" r="22" fill="#FFD9A8" opacity=".95"/>
+<circle cx="622" cy="194" r="22" fill="#FFD9A8" opacity=".95"/>
+<circle cx="800" cy="198" r="22" fill="#FFD9A8" opacity=".95"/>
+<circle cx="978" cy="194" r="22" fill="#FFD9A8" opacity=".95"/>
+<circle cx="1156" cy="184" r="22" fill="#FFD9A8" opacity=".95"/>
+<circle cx="1333" cy="166" r="22" fill="#FFD9A8" opacity=".95"/>
+<circle cx="1511" cy="141" r="22" fill="#FFD9A8" opacity=".95"/>
+<rect width="1600" height="900" filter="url(#gr)" opacity=".16"/>
+<rect x="35" y="35" width="1530" height="830" fill="none" stroke="#fff" stroke-opacity=".28" stroke-dasharray="14 10" stroke-width="2"/>
+<rect x="70" y="730" width="1120" height="100" fill="#FF2D95"/>
+<text x="92" y="772" font-family="monospace" font-weight="700" font-size="28" fill="#0B0612">PROYECTO 3 · EJEMPLO</text>
+<text x="92" y="811" font-family="monospace" font-size="23" fill="#0B0612">Reemplazar: img/proyectos/proyecto-3.jpg</text>
+</svg>

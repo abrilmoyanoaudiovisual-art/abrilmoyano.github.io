@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abril Moyano · Fotografía y Producción</title>
+<meta name="description" content="Portfolio de Abril Moyano, fotógrafa y estudiante de Producción y Dirección Audiovisual en ISEC. Shows, espectáculos, eventos en vivo y contenido.">
+<meta name="theme-color" content="#0B0612">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+
+<!-- NAVEGACIÓN -->
+<nav class="nav" id="nav" aria-label="Principal">
+  <a class="brand" href="#inicio" aria-label="Abril Moyano, inicio"><span class="brand-mark">AM</span><span class="brand-name">Abril Moyano</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#fotografia">Fotografía</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#experiencia">Experiencia</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a class="btn btn-sm nav-cv" href="#contacto" data-cv>CV ↓</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</nav>
+
+<main id="contenido">
+
+<!-- 01 · INICIO -->
+<header class="hero" id="inicio">
+  <div class="hero-meta mono">
+    <span class="rec"><i></i>REC</span>
+    <span id="tc">00:00:00:00</span>
+    <span class="hide-sm">ISEC · Producción y Dirección Audiovisual</span>
+  </div>
+  <h1 class="name" aria-label="Abril Moyano"><span class="n1">ABRIL</span><span class="n2">MOYANO</span></h1>
+  <div class="hero-copy">
+    <p class="tagline" id="tagline"></p>
+    <p class="subtag mono" id="subtag"></p>
+    <div class="hero-cta">
+      <a class="btn" href="#fotografia">Ver fotografía</a>
+      <a class="btn btn-ghost" href="#proyectos">Proyectos audiovisuales</a>
+    </div>
+  </div>
+  <div class="collage" id="collage" aria-hidden="false"></div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- 02 · SOBRE MÍ -->
+<section class="sec about" id="sobre-mi">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="idx mono">01 / Sobre mí</span>
+      <h2>Quién <em>soy</em></h2>
+    </div>
+    <div class="about-grid">
+      <figure class="portrait" data-rv id="portrait"></figure>
+      <div class="about-text" data-rv>
+        <blockquote class="pull" id="pull"></blockquote>
+        <div id="aboutText"></div>
+        <dl class="facts" id="facts"></dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · FOTOGRAFÍA -->
+<section class="sec gallery" id="fotografia">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="idx mono">02 / Fotografía</span>
+      <h2>Luces, cámara, <em>show</em></h2>
+      <p class="lead">Escenarios, shows y gente que vive el momento. Tocá una foto para verla en grande.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar fotografías" data-rv></div>
+    <p class="count mono" id="count" aria-live="polite"></p>
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+
+<!-- 04 · PROYECTOS -->
+<section class="sec projects" id="proyectos">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="idx mono">03 / Proyectos audiovisuales</span>
+      <h2>Detrás de <em>cámara</em></h2>
+      <p class="lead">Trabajos realizados durante mi formación en ISEC: streaming, radio, entrevistas y producciones. Abrí cada ficha para ver el detalle.</p>
+    </div>
+    <div class="proj-grid" id="projGrid"></div>
+  </div>
+</section>
+
+<!-- 05 · EXPERIENCIA Y HABILIDADES -->
+<section class="sec skills" id="experiencia">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="idx mono">04 / Experiencia y habilidades</span>
+      <h2>Herramientas y <em>oficio</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="tools" id="tools" data-rv></div>
+      <div class="know" data-rv>
+        <h3 class="mono">Conocimientos</h3>
+        <ul class="chips" id="chips"></ul>
+        <h3 class="mono mt">Recorrido</h3>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · CONTACTO -->
+<section class="sec contact" id="contacto">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="idx mono">05 / Contacto</span>
+      <h2>Hagamos algo <em>juntos</em></h2>
+      <p class="lead">Si tenés una producción, un evento o un proyecto en mente, escribime. Respondo lo antes posible.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-side" data-rv>
+        <a class="ig" id="igLink" target="_blank" rel="noopener"><span class="mono">Instagram</span><strong id="igText"></strong><span class="arrow" aria-hidden="true">↗</span></a>
+        <div class="mail">
+          <span class="mono">Email</span>
+          <p><span id="mailText"></span> <button class="link-btn" id="copyMail" type="button">Copiar</button></p>
+        </div>
+        <ul class="socials" id="socials"></ul>
+        <a class="btn btn-fuchsia" href="#contacto" id="cvBtn" data-cv>Descargar CV / portfolio PDF ↓</a>
+      </div>
+      <form class="form" id="form" novalidate data-rv>
+        <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
+        <div class="field"><label for="f-email">Tu email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-tipo">¿Sobre qué querés escribirme?</label>
+          <select id="f-tipo" name="tipo">
+            <option>Cobertura fotográfica</option>
+            <option>Producción audiovisual</option>
+            <option>Contenido para medios o redes</option>
+            <option>Trabajo o pasantía</option>
+            <option>Otro</option>
+          </select></div>
+        <div class="field"><label for="f-msg">Mensaje</label><textarea id="f-msg" name="mensaje" rows="5" required></textarea></div>
+        <button class="btn" type="submit">Enviar mensaje</button>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <span class="mono">© <span id="year"></span> Abril Moyano</span>
+  <span class="mono">Fotografía · Producción · Contenido</span>
+  <a class="mono" href="#inicio">Volver arriba ↑</a>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

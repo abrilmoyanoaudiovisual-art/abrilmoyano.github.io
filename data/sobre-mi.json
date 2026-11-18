@@ -1,0 +1,38 @@
+{
+  "foto": "/img/sobre-mi.svg",
+  "fotoAlt": "Retrato de Abril Moyano",
+  "cita": "Me gusta estar donde las cosas pasan: en el escenario, detrás de cámara y en el momento exacto.",
+  "parrafos": [
+    "Soy Abril, fotógrafa y estudiante de Producción y Dirección Audiovisual en ISEC. Me atrae el mundo de los medios de comunicación, los espectáculos, los eventos en vivo y la creación de contenido.",
+    "Empecé con la cámara en la mano y hoy mi mirada se extiende a todo lo que hay detrás de una imagen: la producción, el guion, el sonido, la emisión. Cada proyecto de la carrera me suma una pieza más para entender cómo se arma una historia de principio a fin.",
+    "Busco seguir creciendo en productoras, medios, agencias y equipos de eventos donde pueda aportar mi ojo fotográfico y mi forma de trabajar en equipo."
+  ],
+  "datos": [
+    {
+      "etiqueta": "Estudio",
+      "valor": "Producción y Dirección Audiovisual · ISEC"
+    },
+    {
+      "etiqueta": "Foco",
+      "valor": "Shows, espectáculos y eventos en vivo"
+    },
+    {
+      "etiqueta": "Me interesa",
+      "valor": "Producción, medios, streaming, contenido"
+    }
+  ],
+  "recorrido": [
+    {
+      "cuando": "Ahora",
+      "titulo": "Producción y Dirección Audiovisual",
+      "lugar": "ISEC",
+      "texto": "Formación en producción, dirección, streaming, radio, entrevistas y realización de proyectos."
+    },
+    {
+      "cuando": "En paralelo",
+      "titulo": "Fotografía de shows y eventos",
+      "lugar": "Independiente",
+      "texto": "Cobertura de espectáculos, escenarios y experiencias en vivo."
+    }
+  ]
+}

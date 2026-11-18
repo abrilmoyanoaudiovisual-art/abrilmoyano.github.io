@@ -1,0 +1,40 @@
+{
+  "herramientas": [
+    {
+      "sigla": "Lr",
+      "nombre": "Lightroom",
+      "nivel": 4,
+      "nota": "Revelado y color de fotos de shows"
+    },
+    {
+      "sigla": "Ps",
+      "nombre": "Photoshop",
+      "nivel": 4,
+      "nota": "Retoque y composición"
+    },
+    {
+      "sigla": "Ai",
+      "nombre": "Illustrator",
+      "nivel": 2,
+      "nota": "Nivel básico"
+    },
+    {
+      "sigla": "Cv",
+      "nombre": "Canva",
+      "nivel": 5,
+      "nota": "Piezas gráficas y redes"
+    }
+  ],
+  "conocimientos": [
+    "Fotografía de espectáculos",
+    "Fotografía de eventos",
+    "Luz escénica y poca luz",
+    "Producción audiovisual",
+    "Dirección",
+    "Streaming",
+    "Radio",
+    "Entrevistas",
+    "Contenido para redes",
+    "Trabajo en equipo"
+  ]
+}

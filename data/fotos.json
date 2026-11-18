@@ -1,0 +1,88 @@
+{
+  "fotos": [
+    {
+      "src": "/img/galeria/foto-01.svg",
+      "titulo": "Manos arriba",
+      "categoria": "Shows",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/2.0 · 1/250 · ISO 3200"
+    },
+    {
+      "src": "/img/galeria/foto-02.svg",
+      "titulo": "Antes del primer acorde",
+      "categoria": "Escenarios",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/1.8 · 1/200 · ISO 2500"
+    },
+    {
+      "src": "/img/galeria/foto-03.svg",
+      "titulo": "Luz violeta",
+      "categoria": "Shows",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/2.8 · 1/320 · ISO 4000"
+    },
+    {
+      "src": "/img/galeria/foto-04.svg",
+      "titulo": "Soundcheck",
+      "categoria": "Escenarios",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/2.0 · 1/160 · ISO 1600"
+    },
+    {
+      "src": "/img/galeria/foto-05.svg",
+      "titulo": "La multitud",
+      "categoria": "Eventos",
+      "lugar": "Nombre del evento · Ciudad",
+      "meta": "f/2.2 · 1/500 · ISO 3200"
+    },
+    {
+      "src": "/img/galeria/foto-06.svg",
+      "titulo": "Cajones y cables",
+      "categoria": "Backstage",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/1.8 · 1/125 · ISO 2000"
+    },
+    {
+      "src": "/img/galeria/foto-07.svg",
+      "titulo": "Telón",
+      "categoria": "Escenarios",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/2.0 · 1/250 · ISO 2500"
+    },
+    {
+      "src": "/img/galeria/foto-08.svg",
+      "titulo": "Confeti",
+      "categoria": "Eventos",
+      "lugar": "Nombre del evento · Ciudad",
+      "meta": "f/2.8 · 1/400 · ISO 3200"
+    },
+    {
+      "src": "/img/galeria/foto-09.svg",
+      "titulo": "Coro de celulares",
+      "categoria": "Shows",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/1.8 · 1/200 · ISO 5000"
+    },
+    {
+      "src": "/img/galeria/foto-10.svg",
+      "titulo": "Entrada en escena",
+      "categoria": "Escenarios",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/2.0 · 1/250 · ISO 3200"
+    },
+    {
+      "src": "/img/galeria/foto-11.svg",
+      "titulo": "Camarín",
+      "categoria": "Backstage",
+      "lugar": "Nombre del lugar · Ciudad",
+      "meta": "f/2.2 · 1/100 · ISO 1600"
+    },
+    {
+      "src": "/img/galeria/foto-12.svg",
+      "titulo": "Brillo final",
+      "categoria": "Eventos",
+      "lugar": "Nombre del evento · Ciudad",
+      "meta": "f/2.8 · 1/320 · ISO 2500"
+    }
+  ]
+}

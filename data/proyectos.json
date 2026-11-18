@@ -1,0 +1,90 @@
+{
+  "proyectos": [
+    {
+      "titulo": "Título de tu proyecto de streaming",
+      "tipo": "Streaming",
+      "anio": "2025",
+      "rol": "Producción general y cámara",
+      "resumen": "Transmisión en vivo realizada durante la cursada en ISEC.",
+      "descripcion": [
+        "Contá acá de qué trató el proyecto, cuál era la consigna y qué resultado lograron.",
+        "Podés escribir varios párrafos: cada texto entre comillas es un párrafo nuevo."
+      ],
+      "creditos": [
+        "Dirección: Nombre",
+        "Cámara: Nombre",
+        "Sonido: Nombre"
+      ],
+      "herramientas": [
+        "OBS",
+        "Cámaras",
+        "Audio en vivo"
+      ],
+      "poster": "/img/proyectos/proyecto-1.svg",
+      "video": ""
+    },
+    {
+      "titulo": "Título de tu programa de radio",
+      "tipo": "Radio",
+      "anio": "2025",
+      "rol": "Conducción y producción",
+      "resumen": "Programa de radio realizado en el marco de la carrera.",
+      "descripcion": [
+        "Describí el formato del programa, la temática y tu participación.",
+        "Si tenés el audio en YouTube o Vimeo, pegá el ID en “video”."
+      ],
+      "creditos": [
+        "Conducción: Nombre",
+        "Producción: Nombre"
+      ],
+      "herramientas": [
+        "Estudio de radio",
+        "Edición de audio"
+      ],
+      "poster": "/img/proyectos/proyecto-2.svg",
+      "video": ""
+    },
+    {
+      "titulo": "Título de tu ciclo de entrevistas",
+      "tipo": "Entrevistas",
+      "anio": "2025",
+      "rol": "Dirección y entrevistadora",
+      "resumen": "Serie de entrevistas grabadas para un trabajo práctico.",
+      "descripcion": [
+        "Explicá a quién entrevistaste, cómo armaste las preguntas y cómo resolviste la realización."
+      ],
+      "creditos": [
+        "Dirección: Nombre",
+        "Edición: Nombre"
+      ],
+      "herramientas": [
+        "Cámara",
+        "Iluminación",
+        "Edición"
+      ],
+      "poster": "/img/proyectos/proyecto-3.svg",
+      "video": ""
+    },
+    {
+      "titulo": "Título de tu producción audiovisual",
+      "tipo": "Producción",
+      "anio": "2025",
+      "rol": "Asistente de dirección",
+      "resumen": "Pieza audiovisual realizada junto a tus compañeros de cursada.",
+      "descripcion": [
+        "Sumá la idea, el equipo, el proceso de rodaje y el resultado final."
+      ],
+      "creditos": [
+        "Dirección: Nombre",
+        "Fotografía: Abril Moyano"
+      ],
+      "herramientas": [
+        "Guion",
+        "Rodaje",
+        "Postproducción"
+      ],
+      "poster": "/img/proyectos/proyecto-4.svg",
+      "video": ""
+    }
+  ]
+}

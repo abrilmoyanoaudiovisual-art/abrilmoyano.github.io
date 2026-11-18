@@ -1,0 +1,28 @@
+{
+  "frase": "Fotografío lo que pasa cuando se apagan las luces y empieza el show.",
+  "subfrase": "Fotógrafa y estudiante de Producción y Dirección Audiovisual.",
+  "imagenes": [
+    {
+      "src": "/img/hero-1.svg",
+      "alt": "Fotografía de un recital con luces violetas"
+    },
+    {
+      "src": "/img/hero-2.svg",
+      "alt": "Fotografía de un escenario"
+    },
+    {
+      "src": "/img/hero-3.svg",
+      "alt": "Fotografía de un evento en vivo"
+    }
+  ],
+  "roles": [
+    "Fotografía",
+    "Producción audiovisual",
+    "Streaming",
+    "Radio",
+    "Eventos en vivo",
+    "Contenido",
+    "Espectáculos",
+    "Medios"
+  ]
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía paso a paso · Portfolio de Abril Moyano</title>
+<style>
+:root{--ink:#0B0612;--violet:#8B3DFF;--lilac:#CDBBFF;--white:#F7F4FF;--fuchsia:#FF2D95;--line:rgba(247,244,255,.18)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--white);font:17px/1.65 "Helvetica Neue",Arial,sans-serif;color-scheme:dark}
+main{max-width:820px;margin:0 auto;padding:48px 20px 96px}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1;margin:.2em 0 .3em;letter-spacing:-.02em}
+h1 em,h2 em{font-family:Georgia,serif;color:var(--fuchsia);font-weight:400}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);margin:2.4em 0 .4em;line-height:1.1;padding-top:.6em;border-top:1px solid var(--line)}
+h3{margin:1.6em 0 .3em;font-size:1.15rem;color:var(--lilac)}
+.lead{color:var(--lilac);font-size:1.1rem}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:1em 0}
+ol.steps>li{counter-increment:s;position:relative;padding:18px 18px 18px 72px;border:1px solid var(--line);margin-bottom:12px;background:rgba(139,61,255,.08)}
+ol.steps>li::before{content:counter(s);position:absolute;left:18px;top:16px;width:38px;height:38px;border-radius:50%;background:var(--fuchsia);color:var(--ink);font-weight:800;display:grid;place-items:center}
+ol.steps b.t{display:block;font-size:1.1rem;margin-bottom:4px}
+code,kbd{font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(255,255,255,.1);padding:2px 7px;border-radius:4px;font-size:.9em}
+.note{border-left:3px solid var(--fuchsia);padding:10px 16px;margin:1.2em 0;background:rgba(255,45,149,.08)}
+a{color:var(--fuchsia)}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:.95rem}
+td,th{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{color:var(--lilac);font-weight:600}
+ul{padding-left:1.2em}
+.tag{display:inline-block;background:var(--fuchsia);color:var(--ink);font-weight:700;font-size:.75rem;padding:2px 9px;letter-spacing:.06em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<main>
+<span class="tag">Guía</span>
+<h1>Tu portfolio, <em>sin tocar código</em></h1>
+<p class="lead">Esta guía tiene dos partes. La <b>Parte 1</b> se hace una sola vez (unos 20 minutos) y deja tu página publicada en internet con tu panel de administración listo. La <b>Parte 2</b> es lo que vas a hacer cada vez que quieras actualizar algo.</p>
+
+<p>Cómo funciona, en simple: tu página vive en <b>GitHub</b> (un servicio gratuito donde se guardan los archivos de tu sitio) y se publica con <b>GitHub Pages</b> (gratis). El panel de administración es <b>Pages CMS</b> (gratis), una pantalla con formularios donde editás textos y subís fotos. Cada vez que apretás <b>Save</b> (Guardar), el cambio se guarda en GitHub y tu página se actualiza sola en uno o dos minutos. Nadie más puede editarla: para entrar al panel hace falta tu usuario de GitHub.</p>
+
+<h2>Parte 1 · Puesta en marcha <em>(una sola vez)</em></h2>
+
+<ol class="steps">
+<li><b class="t">Creá tu cuenta en GitHub</b>
+Entrá a <a href="https://github.com/signup" target="_blank" rel="noopener">github.com/signup</a> y registrate con tu email. El <b>nombre de usuario</b> que elijas va a formar parte de la dirección de tu página (por ejemplo <code>abrilmoyano</code> → <code>abrilmoyano.github.io</code>). Elegí uno profesional y corto. Después, en <i>Settings → Password and authentication</i>, conviene activar la verificación en dos pasos para que nadie pueda entrar a tu panel.</li>
+
+<li><b class="t">Creá un repositorio (la “carpeta” de tu sitio)</b>
+Arriba a la derecha tocá el botón <code>+</code> y elegí <b>New repository</b>.<br>
+· En <b>Repository name</b> escribí <code>TUUSUARIO.github.io</code>, reemplazando TUUSUARIO por tu usuario exacto (así tu página queda en una dirección corta).<br>
+· Marcá <b>Public</b>.<br>
+· Tocá el botón verde <b>Create repository</b>.</li>
+
+<li><b class="t">Subí los archivos del portfolio</b>
+Descomprimí el ZIP que te envié. En la pantalla del repositorio recién creado, hacé clic en el enlace <b>uploading an existing file</b>. Abrí la carpeta descomprimida, seleccioná <b>todo lo que hay adentro</b> (no la carpeta en sí) y arrastralo a la ventana del navegador. Esperá a que termine de cargar y tocá <b>Commit changes</b>.
+<div class="note"><b>Archivo oculto:</b> uno de los archivos se llama <code>.pages.yml</code> y algunas computadoras lo ocultan. Cuando termine la carga, fijate si aparece en la lista de archivos del repositorio. Si <b>no aparece</b>: tocá <b>Add file → Create new file</b>, en el nombre escribí <code>.pages.yml</code>, abrí el archivo <code>panel-config.txt</code> de la carpeta con el Bloc de notas, copiá todo su contenido, pegalo en GitHub y tocá <b>Commit changes</b>.</div></li>
+
+<li><b class="t">Publicá la página</b>
+En tu repositorio entrá a <b>Settings</b> (arriba) → <b>Pages</b> (menú izquierdo). En <b>Source</b> elegí <b>Deploy from a branch</b>. En <b>Branch</b> elegí <code>main</code> y la carpeta <code>/ (root)</code>, y tocá <b>Save</b>. Esperá entre 1 y 3 minutos y recargá esa pantalla: va a aparecer <i>“Your site is live at…”</i> con la dirección de tu portfolio. Esa es la dirección que podés pasar a productoras, medios y agencias.</li>
+
+<li><b class="t">Conectá el panel de administración</b>
+Entrá a <a href="https://app.pagescms.org" target="_blank" rel="noopener">app.pagescms.org</a> y tocá <b>Sign in with GitHub</b>. Te va a pedir instalar la aplicación de Pages CMS en tu cuenta: elegí <b>Only select repositories</b>, marcá tu repositorio <code>TUUSUARIO.github.io</code> y confirmá con <b>Install</b>. Después abrí tu repositorio desde la lista. Si ves el menú con las 6 secciones (Portada, Sobre mí, Fotografía…), todo quedó funcionando.</li>
+</ol>
+
+<h2>Parte 2 · Cómo <em>actualizar</em> tu página</h2>
+
+<h3>Cómo entrar</h3>
+<p>Entrá a <a href="https://app.pagescms.org" target="_blank" rel="noopener">app.pagescms.org</a>, iniciá sesión con GitHub y abrí tu repositorio. A la izquierda vas a ver las seis secciones de tu página. Podés guardar esa dirección en favoritos.</p>
+
+<h3>Cómo guardar los cambios</h3>
+<ol class="steps">
+<li><b class="t">Editá lo que quieras</b> en cualquier sección.</li>
+<li><b class="t">Tocá el botón <code>Save</code></b> (Guardar), arriba a la derecha. Si te olvidás, el cambio no se guarda.</li>
+<li><b class="t">Esperá 1 o 2 minutos</b> y abrí tu página. Si no ves el cambio, recargá sin memoria: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> (en Mac <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>). Con esto el cambio queda en la página publicada, para todos los que la visiten.</li>
+</ol>
+
+<h3>Qué hacer en cada caso</h3>
+<table>
+<tr><th>Quiero…</th><th>Hago esto</th></tr>
+<tr><td>Subir mis fotos a la galería</td><td>Menú <b>3 · Fotografía</b> → tocá <b>Add an entry</b> (agregar) al final de la lista → en <b>Foto</b> tocá el campo, elegí <b>Upload</b> y seleccioná el archivo de tu computadora → escribí título y categoría → <b>Save</b>. Podés subir varias, una por una.</td></tr>
+<tr><td>Eliminar una foto</td><td>Menú <b>3 · Fotografía</b> → abrí la foto de la lista → ícono de papelera → <b>Save</b>.</td></tr>
+<tr><td>Cambiar el orden de las fotos</td><td>En la misma lista, arrastrá cada foto hacia arriba o abajo → <b>Save</b>.</td></tr>
+<tr><td>Cambiar títulos, textos y descripciones</td><td>Entrá a la sección correspondiente, hacé clic en el texto, escribí y tocá <b>Save</b>. Los textos largos están divididos en párrafos: cada recuadro es un párrafo.</td></tr>
+<tr><td>Agregar un proyecto audiovisual</td><td>Menú <b>4 · Proyectos audiovisuales</b> → <b>Add an entry</b> → completá título, tipo, año, tu rol, descripción, créditos, imagen de portada y pegá el <b>enlace del video</b> de YouTube o Vimeo tal cual lo copiás del navegador → <b>Save</b>.</td></tr>
+<tr><td>Cambiar la foto de portada</td><td>Menú <b>1 · Portada</b> → en <b>Fotos del collage</b> reemplazá cada una (son 3) → <b>Save</b>.</td></tr>
+<tr><td>Cambiar mi foto de presentación</td><td>Menú <b>2 · Sobre mí</b> → campo <b>Tu foto de presentación</b> → subí la nueva → <b>Save</b>.</td></tr>
+<tr><td>Editar mis datos de contacto</td><td>Menú <b>6 · Contacto y redes</b> → email, Instagram, otras redes → <b>Save</b>.</td></tr>
+<tr><td>Subir mi CV en PDF</td><td>Menú <b>6 · Contacto y redes</b> → campo <b>Tu CV o portfolio en PDF</b> → subí el archivo → <b>Save</b>. El botón “Descargar CV” de la página empieza a funcionar.</td></tr>
+<tr><td>Cambiar herramientas y conocimientos</td><td>Menú <b>5 · Experiencia y habilidades</b>.</td></tr>
+</table>
+
+<div class="note"><b>Las imágenes de ejemplo.</b> Todo lo que hoy se ve con la etiqueta fucsia <b>EJEMPLO</b> es material provisorio. La etiqueta desaparece sola cuando reemplazás esa imagen por una tuya o borrás esa entrada. Los textos entre corchetes o que dicen “Nombre”, “Título de tu proyecto”, “tuemail@ejemplo.com” y “tu_usuario” también son de ejemplo: reemplazalos desde el panel.</div>
+
+<h3>Cómo preparar tus fotos <em>(importante)</em></h3>
+<ul>
+<li>Exportalas desde <b>Lightroom</b> en <b>JPG</b>, con <b>2000 px</b> en el lado largo, calidad <b>75–80</b> y espacio de color sRGB. Cada foto debería pesar menos de 600 KB.</li>
+<li>No subas originales de cámara (10 MB o más): la página tardaría mucho en cargar, sobre todo en celulares.</li>
+<li>Para la portada y “Sobre mí” funcionan mejor fotos verticales. Para los proyectos, horizontales.</li>
+<li>Evitá nombres de archivo con símbolos raros. El panel limpia los nombres automáticamente.</li>
+</ul>
+
+<h2>Preguntas <em>frecuentes</em></h2>
+<h3>¿El panel está en español?</h3>
+<p>Los nombres de las secciones y los campos sí. Los botones del panel vienen en inglés: <b>Save</b> = Guardar, <b>Add an entry</b> = Agregar un elemento, <b>Upload</b> = Subir, <b>Delete</b> = Eliminar, <b>Cancel</b> = Cancelar.</p>
+<h3>Cargué un video y no se ve</h3>
+<p>Revisá que el enlace sea de YouTube o Vimeo y que el video no esté privado. Los enlaces de YouTube (<code>youtube.com/watch?v=…</code>, <code>youtu.be/…</code>) y de Vimeo se reconocen solos.</p>
+<h3>¿Puedo usar mi propio dominio (por ejemplo abrilmoyano.com)?</h3>
+<p>Sí. Primero comprás el dominio en un registrador y después lo cargás en GitHub: <i>Settings → Pages → Custom domain</i>. Es un paso opcional y se puede hacer más adelante.</p>
+<h3>¿Cómo hago para que los mensajes del formulario lleguen a mi mail?</h3>
+<p>Por defecto el formulario abre el correo de quien escribe con el mensaje armado. Si querés recibirlos directo, creá un formulario gratuito en <a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a>, copiá la dirección que te da y pegala en <b>6 · Contacto y redes → Avanzado</b>.</p>
+<h3>Me equivoqué y borré algo</h3>
+<p>Todo lo que guardás queda registrado en GitHub (pestaña <b>Commits</b> de tu repositorio), así que se puede recuperar. Si te pasa, pedime ayuda y lo resolvemos.</p>
+<h3>¿Cuánto cuesta?</h3>
+<p>GitHub, GitHub Pages y Pages CMS son gratuitos para este uso. Solo pagarías si más adelante querés tu propio dominio.</p>
+</main>
+</body>
+</html>

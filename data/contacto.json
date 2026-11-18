@@ -1,0 +1,20 @@
+{
+  "email": "tuemail@ejemplo.com",
+  "instagram": "tu_usuario",
+  "otrasRedes": [
+    {
+      "nombre": "TikTok",
+      "url": "https://www.tiktok.com/@tu_usuario"
+    },
+    {
+      "nombre": "LinkedIn",
+      "url": "https://www.linkedin.com/in/tu-perfil"
+    },
+    {
+      "nombre": "Vimeo",
+      "url": "https://vimeo.com/tu_usuario"
+    }
+  ],
+  "cv": "",
+  "formEndpoint": ""
+}

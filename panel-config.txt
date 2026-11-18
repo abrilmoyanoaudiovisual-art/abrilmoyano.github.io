@@ -1,0 +1,285 @@
+# ============================================================
+# PANEL DE ADMINISTRACIÓN · Portfolio de Abril Moyano
+# Este archivo configura el panel (Pages CMS). No hace falta editarlo.
+# ============================================================
+media:
+  - name: imagenes
+    label: Imágenes
+    input: img
+    output: /img
+    rename: safe
+    extensions: [jpg, jpeg, png, webp, gif, svg]
+  - name: documentos
+    label: Documentos
+    input: cv
+    output: /cv
+    rename: safe
+    extensions: [pdf]
+
+content:
+  # ---------------------------------------------------------
+  - name: portada
+    label: "1 · Portada"
+    type: file
+    path: data/portada.json
+    format: json
+    fields:
+      - name: frase
+        label: Frase principal
+        type: text
+        description: La frase grande que aparece debajo de tu nombre.
+      - name: subfrase
+        label: Frase corta (debajo de la principal)
+        type: string
+      - name: imagenes
+        label: Fotos del collage de portada
+        type: object
+        description: Son 3 fotos. La primera es la más grande. Mejor si son verticales.
+        list:
+          min: 1
+          max: 3
+          collapsible:
+            collapsed: false
+            summary: "Foto {index}"
+        fields:
+          - name: src
+            label: Foto
+            type: image
+            options:
+              media: imagenes
+          - name: alt
+            label: Descripción de la foto (para accesibilidad)
+            type: string
+      - name: roles
+        label: Palabras de la cinta rosa
+        type: string
+        list: true
+        description: Las palabras que se repiten en la cinta fucsia debajo de la portada.
+
+  # ---------------------------------------------------------
+  - name: sobre-mi
+    label: "2 · Sobre mí"
+    type: file
+    path: data/sobre-mi.json
+    format: json
+    fields:
+      - name: foto
+        label: Tu foto de presentación
+        type: image
+        options:
+          media: imagenes
+        description: Ideal una foto vertical (formato 4:5).
+      - name: fotoAlt
+        label: Descripción de la foto
+        type: string
+      - name: cita
+        label: Frase destacada
+        type: text
+      - name: parrafos
+        label: Texto de presentación
+        type: text
+        list: true
+        description: Cada recuadro es un párrafo. Usá "Agregar" para sumar otro.
+      - name: datos
+        label: Datos rápidos (Estudio, Foco...)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{etiqueta}"
+        fields:
+          - name: etiqueta
+            label: Título (ej. Estudio)
+            type: string
+          - name: valor
+            label: Detalle
+            type: string
+      - name: recorrido
+        label: Recorrido (línea de tiempo)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{cuando} · {titulo}"
+        fields:
+          - name: cuando
+            label: Cuándo (ej. 2025 o Ahora)
+            type: string
+          - name: titulo
+            label: Título
+            type: string
+          - name: lugar
+            label: Lugar o institución
+            type: string
+          - name: texto
+            label: Descripción
+            type: text
+
+  # ---------------------------------------------------------
+  - name: fotos
+    label: "3 · Fotografía (galería)"
+    type: file
+    path: data/fotos.json
+    format: json
+    fields:
+      - name: fotos
+        label: Fotografías
+        type: object
+        description: "Para agregar una foto usá el botón de agregar. Para borrarla, abrila y usá el ícono de papelera. Para cambiar el orden, arrastrala."
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{titulo} · {categoria}"
+        fields:
+          - name: src
+            label: Foto
+            type: image
+            options:
+              media: imagenes
+            description: "Subí un JPG de unos 2000 px de lado largo (exportado desde Lightroom)."
+          - name: titulo
+            label: Título
+            type: string
+          - name: categoria
+            label: Categoría
+            type: string
+            description: "Ej: Shows, Escenarios, Eventos, Backstage. Las fotos con la misma categoría se agrupan en un filtro."
+          - name: lugar
+            label: Lugar o evento (opcional)
+            type: string
+          - name: meta
+            label: Datos técnicos (opcional)
+            type: string
+            description: "Ej: f/2.0 · 1/250 · ISO 3200"
+
+  # ---------------------------------------------------------
+  - name: proyectos
+    label: "4 · Proyectos audiovisuales"
+    type: file
+    path: data/proyectos.json
+    format: json
+    fields:
+      - name: proyectos
+        label: Proyectos
+        type: object
+        description: Cada proyecto tiene su propia ficha. Agregá, borrá o reordená.
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{titulo}"
+        fields:
+          - name: titulo
+            label: Título del proyecto
+            type: string
+          - name: tipo
+            label: Tipo
+            type: string
+            description: "Ej: Streaming, Radio, Entrevistas, Producción, Cortometraje"
+          - name: anio
+            label: Año
+            type: string
+          - name: rol
+            label: Tu rol
+            type: string
+            description: "Ej: Producción general y cámara"
+          - name: resumen
+            label: Resumen corto (aparece en la tarjeta)
+            type: string
+          - name: descripcion
+            label: Descripción completa
+            type: text
+            list: true
+            description: Cada recuadro es un párrafo.
+          - name: creditos
+            label: Créditos
+            type: string
+            list: true
+            description: "Ej: Dirección: Nombre Apellido"
+          - name: herramientas
+            label: Herramientas usadas
+            type: string
+            list: true
+          - name: poster
+            label: Imagen de portada
+            type: image
+            options:
+              media: imagenes
+            description: Mejor en formato horizontal (16:9).
+          - name: video
+            label: Enlace del video (YouTube o Vimeo)
+            type: string
+            description: "Pegá el enlace completo, tal cual lo copiás del navegador. Dejalo vacío si todavía no tenés video."
+
+  # ---------------------------------------------------------
+  - name: habilidades
+    label: "5 · Experiencia y habilidades"
+    type: file
+    path: data/habilidades.json
+    format: json
+    fields:
+      - name: herramientas
+        label: Herramientas
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{nombre}"
+        fields:
+          - name: nombre
+            label: Nombre (ej. Lightroom)
+            type: string
+          - name: sigla
+            label: Iniciales para el ícono (2 letras)
+            type: string
+          - name: nivel
+            label: Nivel de 1 a 5
+            type: number
+            options:
+              min: 1
+              max: 5
+          - name: nota
+            label: Nota corta
+            type: string
+      - name: conocimientos
+        label: Conocimientos
+        type: string
+        list: true
+
+  # ---------------------------------------------------------
+  - name: contacto
+    label: "6 · Contacto y redes"
+    type: file
+    path: data/contacto.json
+    format: json
+    fields:
+      - name: email
+        label: Tu email
+        type: string
+      - name: instagram
+        label: Instagram
+        type: string
+        description: "Escribí tu usuario (ej: abril.moyano) o pegá el enlace de tu perfil."
+      - name: otrasRedes
+        label: Otras redes
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{nombre}"
+        fields:
+          - name: nombre
+            label: Nombre de la red (ej. TikTok)
+            type: string
+          - name: url
+            label: Enlace completo
+            type: string
+      - name: cv
+        label: Tu CV o portfolio en PDF
+        type: file
+        options:
+          media: documentos
+        description: Subí el PDF. El botón "Descargar CV" de la página lo va a usar.
+      - name: formEndpoint
+        label: "Avanzado: dirección del formulario (opcional)"
+        type: string
+        description: "Dejalo vacío. Si querés que los mensajes lleguen directo a tu mail, pegá acá la dirección de Formspree (ver guía)."
