@@ -14,24 +14,20 @@
       "valor": "Producción y Dirección Audiovisual · ISEC"
     },
     {
-      "etiqueta": "Foco",
-      "valor": "Shows, espectáculos y eventos en vivo"
-    },
-    {
       "etiqueta": "Me interesa",
-      "valor": "Producción, medios, streaming, contenido"
+      "valor": "Producción, dirección, streaming, medios, contenido"
     }
   ],
   "recorrido": [
     {
-      "cuando": "Ahora",
+      "cuando": "2025",
       "titulo": "Producción y Dirección Audiovisual",
       "lugar": "ISEC",
       "texto": "Formación en producción, dirección, streaming, radio, entrevistas y realización de proyectos."
     },
     {
       "cuando": "En paralelo",
-      "titulo": "Fotografía de shows y eventos",
+      "titulo": "Fotografía de espectaculos y eventos",
       "lugar": "Independiente",
       "texto": "Cobertura de espectáculos, escenarios y experiencias en vivo."
     }
